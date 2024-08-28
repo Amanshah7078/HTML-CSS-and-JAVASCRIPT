@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque natus quas est delectus eos ratione
+            architecto! Cum animi nihil ut quam placeat libero aliquam dolores recusandae doloremque esse voluptatum
+            deleniti repellendus quisquam, omnis est asperiores, atque unde facere consectetur praesentium quo dicta
+            culpa. Natus corrupti dolorem, iure provident cupiditate doloremque? Magni quos at illo iure impedit?</p>
+
+        <button class="btn " onclick="togglehide()">Hide</button>
+        <button class="btn" onclick="toggleshow()">Show</button>
+        <button class="btn" onclick="toggleboth()">SHow /hide</button>
+
+
+
+    </div>
+    <script>
+        function togglehide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            para.style.display = 'none';
+        }
+
+        function toggleshow() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            para.style.display = 'block';
+        }
+
+        function toggleboth() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display!= 'none') {
+                para.style.display = 'none';
+            }
+
+            else {
+                para.style.display = 'block';
+                
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container{
+            height: 200px;
+            width: 150%;
+            border: 2px dotted rgb(9, 255, 0);
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: column-reverse; */
+            flex-wrap: wrap;
+           align-items: center;
+        justify-self: unset;
+        align-items: flex-start;
+           
+            }
+        .item{
+            width: 150px;
+            height: 200px;
+            background-color: aqua;
+            border: 2px solid rgb(245, 0, 0);
+            display:flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            
+            
+        }
+        #item-1{
+            flex-grow: inherit;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>
+        This is flexbox tutorial
+    </h1>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">third box</div>
+        <div class="item" id="item-4">Fourth box</div>
+        <div class="item" id="item-5">Fifth box</div>
+        <div class="item" id="item-6">sixth box</div>
+    </div>
+
+    
+</body>
+</html>

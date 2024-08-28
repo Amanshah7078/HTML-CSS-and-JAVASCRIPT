@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes and Animations</title>
+    <style>
+        body{
+            background-color: #2fecf9;
+        }
+        
+        .container {
+            background-color: rgb(64, 209, 235);
+        
+            height: fit-content;
+
+        }
+
+        .box{
+            background-color: coral;
+            display: inline-block;
+            border: 3px solid red;
+            width: 100px;
+            height: 300px;
+            animation: alternate-reverse;
+            animation: reverse;
+            position: relative;
+            animation-duration: 18s;
+            animation-iteration-count: infinite;
+            animation-name: Aman;
+            animation-delay: none;
+            animation-direction:alternate;
+            animation-fill-mode:both;
+            animation-range-start: initial;
+            transform-style: preserve-3d;
+            background: url(https://th.bing.com/th/id/OIP.XvFZm3mAhwKd48IqlBmK3QHaEK?rs=1&pid=ImgDetMain);
+        }
+        .box2{
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes Aman {
+            from {
+                width: 2px;
+                box-shadow: 4px 5px 10px;
+                margin: 30px 35px;
+                transform: rotate(3000deg);
+            }
+
+            to {
+                width: 900px;
+                box-shadow: 50px 70px 30px;
+                margin: 100px 60px;
+                transform: rotate(360deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-1">box-1</div>
+ 
+
+    </div>
+</body>
+
+</html>

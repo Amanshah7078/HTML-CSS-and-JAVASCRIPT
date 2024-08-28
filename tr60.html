@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrrow Function in JavaScript</title>
+    <style>
+        body{
+            background: url(https://cdn.wallpapersafari.com/83/59/yaXM9U.jpg);
+        }
+        .container{
+            background: black;
+
+            font-size: 30px;
+            border: 3px double blueviolet;
+           
+            text-justify: kashida;
+            background-color: rgb(39, 187, 187);
+           padding: 50px; 
+            text-align: center;
+            backdrop-filter:blur(1px);
+
+           }
+        #time{
+            font-size: 30px;
+           border: 3px dotted purple;
+            text-decoration:wavy;
+
+            
+        }
+    </style>
+  
+</head>
+<body>
+    <div class="container">
+    time is now<i><b><span id="time"></span></b></i>
+    </div>
+    <div class="container1">
+        <marquee><h1>This is Arrow function in js</h1></marquee>
+    </div>
+    <script>
+        function greet(){
+            console.log('Good Nyt');
+        }
+        greet();
+        setTimeout(() => {
+            console.log('We are in setTimeOut')
+        }, 3000);
+        </script>
+    <script>
+
+        function dispalyTime(){
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(dispalyTime,1000);
+
+        
+        let sum=(a,b) => a+b;
+        let half=a =>a/2;
+
+        let obj1={
+            names:["Aman","Professor","topa","disappaer_friend" ,"topa" ],
+            speak(){   this.names.forEach(student)  ;
+            }
+
+
+           
+            
+                
+            
+        }
+         function displayTime(){
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML('time');
+
+         }
+        setInterval(dispalyTime,1000);
+
+        function greet(){
+            console.log('fk u');
+        }
+        greet();
+        setTimeout(() => {
+            console.log('Another timeout');
+        }, 3000);
+         
+    </script>
+</body>
+</html>

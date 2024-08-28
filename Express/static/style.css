@@ -1,0 +1,18 @@
+*{
+font-family: cursive;
+}
+nav{
+    background-color: rgb(21, 131, 164);
+    border: 2px solid blue;
+}
+
+ul li {
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    list-style: none;
+
+}
+li{
+    margin-right: 20px;
+} 

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAN</title>
+    <style>
+        /* CSS for basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .testimonial {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AMAN</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to AMAN! We are dedicated to providing high-quality services to our clients.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Design</li>
+                <li>Graphic Design</li>
+                <li>Digital Marketing</li>
+            </ul>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="F:\DCIMDCIMDCIM\New folder (2)\20180319_222359.jpg" alt="F:\DCIMDCIMDCIM\New folder (2)\20180319_222359.jpg">
+                <img src="image2.jpg" alt="Image 2">
+                <img src="image3.jpg" alt="Image 3">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"AMAN helped us create an amazing website that exceeded our expectations!" - John Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"The team at AMAN is professional, creative, and reliable. Highly recommended!" - Jane Smith</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 AMAN. All rights reserved.</p>
+    </footer>
+</body>
+</html>

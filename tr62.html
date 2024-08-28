@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json objects in JavaScript</title>
+    <style>
+        .container{
+            background-color: chocolate;
+            border: 3px solidd red;
+            border-radius: 13px;
+            font-size: 25px;
+
+        }
+        .btn{
+            background-color: #4CAF50;
+            
+        }
+        .btn:hover{
+            background-color: #e013ad;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        time is now<span id="time"></span>
+        <p id="para">Lorem ips um dolor, sit amet consectetur adipisicing elit. Ea reprehenderit aspernatur blanditiis. Qui est
+            earum quis sit, labore rem tempore temporibus assumenda eveniet corrupti voluptate officia sint iusto
+            cupiditate deserunt ex unde molestias?</p>
+
+            <button class="btn" onclick="togglehide()">Show less</button>
+            <button class="btn" onclick="toggleshow()">Show More</button>
+            <button class="btn" onclick="toggleboth()">Both/SHowless</button>
+    </div>
+    <script>
+function toggleshow(){
+    let btn=document.getElementById('btn');
+    let para=document.getElementById('para');
+    para.style.display='block';
+}
+function togglehide(){
+    let btn=document.getElementById('btn');
+    let para=document.getElementById('para');
+    para.style.display='none';
+}
+
+function toggleboth(){
+    let btn=document.getElementById('btn');
+    let para=document.getElementById('para');
+    if (para.style.display!='none'){
+        para.style.display='none';
+    }
+else{
+    para.style.display='block';
+   
+}
+
+}
+function dispalyTime(){
+    let time=new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML=time;
+}
+setInterval(dispalyTime,1000);
+ 
+
+    
+
+    
+   
+
+
+
+
+        let jsonObj= {
+            name:'Aman',
+            age:'20',
+            channel:'CWA'
+            
+            
+
+        }
+        console.log(jsonObj);
+        let myJsonstr=JSON .stringify(jsonObj);
+        console.log(myJsonstr);
+
+        myJsonstr=myJsonstr.replace('Aman','Chaman');
+        console.log(myJsonstr);
+
+        newjsonObj=JSON.parse(myJsonstr);
+        console.log(newjsonObj)
+    </script>
+
+</body>
+
+</html>

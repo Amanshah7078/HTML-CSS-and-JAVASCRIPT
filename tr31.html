@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+    <style>
+        h1{
+            font-weight: bold;
+            color: crimson;
+            background-color: darkgreen;
+            text-align: center;
+
+            display: inline-block;
+        }
+        div>p{
+        color: rgba(136, 0, 255, 0.726);
+        }
+         div p{
+            color: aqua;
+            background-color: blue;
+            display: inline-block;
+            text-align: center;
+            margin: 30px;
+            padding: 20px; 
+    }
+    div+p{
+        background-color: blueviolet;
+        text-align: right;
+        padding-left: 40px;
+        
+    }
+    
+     
+    
+    </style>
+</head>
+<body>
+    
+    <h1>THis is more on selectors</h1>
+    <div class="container"></div>
+    <div class="row">
+        <p>This is another paragraph</p>
+
+    </div>
+    
+    <div>
+    <p>This is also unique another paragraph</p>
+ </div>
+ <div>
+    <p>This is outermost paragraph</p>
+ </div>
+ 
+
+</body>
+</html>

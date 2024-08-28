@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+        
+        }
+      #box-1{
+        position: relative; 
+        background-color: blueviolet;  }
+      #box-2{
+        position: relative;
+        /* visibility:hidden;  It will hide the box but its seat will reserved */
+        background-color: green; }
+    
+      #box-3{ background-color: violet; }
+      #box-4{ background-color: purple;}
+
+    
+    </style>
+</head>
+<body>
+        
+    <div class="box" id="box-1">
+      <h1>
+        This is first box
+      </h1>
+    </div>
+    <div class="box" id="box-2">
+      <h1>
+        THis is second box
+      </h1>
+    </div>
+    <div class="box" id="box-3">
+      <h1>
+        This is third box
+      </h1>
+    </div>
+    <div class="box" id="box-4">
+       <h1>
+        THis is fourth box
+       </h1>
+    </div>
+
+</body>
+</html>

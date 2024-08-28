@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Strings Functions</title>
+    <script>
+        var str = "Aman is a string maker that accusses the coder attributes and i have lil completed the html and css to the external ot internal files to coding the website and design the header and body alos the functions. Proper layouts anf pseudo selectors makes the style of css(Cascading Style Sheets)";
+
+        // First occurence of substring
+        var position = str.indexOf('pseudo');
+
+        // Last occurence of substring
+        var position = str.lastIndexOf('the');
+        var substr1=str.substr(1,9);
+        console.log(substr1);
+        var replaced=str.replace('Aman','string')
+        console.log(replaced);
+        var newstring=str .concat('NewString')
+        console.log(newstring);
+        var strWithWhitespaces="this contains         terminology        Whitespaces";
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim())
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        console.log(position);
+    </script>
+    <style>
+        .container{
+            justify-content: center;
+           text-align: center;
+            text-shadow: 20px 14px 9px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+       <marquee> <h1>JavaScript Strings Functions</h1></marquee>
+        <p>JavaScript has a number of built-in methods for strings.</p>
+        <p>These methods are used very frequently with strings.</p>
+        <p>JavaScript has a number of built-in methods for strings.</p>
+
+    </div>
+</body>
+
+</html>

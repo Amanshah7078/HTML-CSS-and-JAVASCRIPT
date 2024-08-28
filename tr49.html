@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JavaScript</title>
+    <script>
+        // var strinf='this';
+        var string='this';
+        var name= 'Aman';
+        var channel= 'Code With Aman';
+        var temp=`${name} is a Coder and he has a channel of ${channel}`;
+        var message= 'Aman is a Coder.';
+        console.log(message +channel);
+        console.log(temp);  
+        var len= name.length;
+        console.log(`Length of a name is ${len}`)
+        document.getElementById('content');
+        innerHTML= `<u><h1>Strings in JavaScript</h1></u>`
+    </script>
+    
+    <style>
+.container{
+    justify-content: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 20px 10px 8px;
+    background-color:darkorange ;
+    padding: 60px;
+    animation-direction: normal;
+    animation-composition: 30px;
+    animation-duration: 4s;
+    animation-name: identifier;
+    animation-range: initial;
+    transform-style: preserve-3d;
+    animation-fill-mode:both;
+
+}
+
+
+
+
+@keyframes identifier {
+    from {
+        background-color: red;
+        width: 200px;
+    transform:matrix3d()(20deg)
+}
+to {
+background-color: antiquewhite;
+width: 1500px;
+transform:matrix3d(360deg) ;
+}
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <u><h1>Strings in JavaScript</h1></u>
+        <p>Strings are used for storing text.</p>
+        <p>Strings are written with quotes.</p>
+        <p>Strings can be written with single or double quotes.</p>
+    
+    
+    </div>
+    
+</body>
+</html>

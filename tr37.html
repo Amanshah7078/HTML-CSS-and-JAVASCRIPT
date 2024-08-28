@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background transition</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    
+    .box{
+        background-color: rgb(0, 255, 170);
+        border: 3px solid #fa18f3d5;
+        border-radius: 30px;
+        display: flex;
+        height: 100px;
+        width: 100px;
+       transition: all 1s ease-in-out .5s;
+        display: inline-block;
+        margin: 30px 40px;
+        
+    }
+    .box:hover{
+        background-color: rgb(234, 0, 255);
+        height: 250px;
+        width: 200px;
+       
+    }
+
+</style>
+<body>
+    
+    <div class="container">
+    <div class="box" id="box-1"> 
+        <h1>This is my boxx</h1>
+    </div>
+    <div class="box" id="box-2">
+        <h1>This is my second box</h1>
+        </div>
+    <div class="box" id="box-3">
+        <h1>This is my third box</h1>
+    </div>
+    
+    
+</body>
+</html>

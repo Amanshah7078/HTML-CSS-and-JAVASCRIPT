@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <span id="time"></span>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, eum. Molestiae, aliquid tempora consequatur
+            ipsa at praesentium assumenda temporibus quis asperiores ut. Sapiente minima ipsa maxime eos illo ut? Ipsa
+            quaerat alias repudiandae maiores officia id. Beatae, placeat ipsa cupiditate necessitatibus accusamus
+            voluptates iusto doloremque in ab eos natus cum.</p>
+            
+            <button class="btn" onclick="toggleshow()">show</button>
+            <button class="btn" onclick="togglehide()">hide</button>
+            <button class="btn" onclick="toggleboth()">hide/show</button>
+    </div>
+</body>
+<script>
+    function toggleshow(){
+        let btn=document.getElementById('btn');
+        let para=document.getElementById('para');
+        para.style.display='block';
+    }
+
+function togglehide(){
+let btn=document.getElementById('btn');
+let para=document.getElementById('para');
+para.style.display='none';
+}
+
+function toggleboth(){
+    let btn=document.getElementById('btn');
+    let para=document.getElementById('para');
+    if (para.style.display!='none'){
+         para.style.display='none';
+    }
+   else{
+    para.style.display='block';
+   }
+}
+
+function DisplayTime(){
+    let time =new Date();
+    console.log(time);
+    document.getElementById("time").innerHTML=time;
+}
+setInterval(DisplayTime,1000);
+</script>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Listening the Events</title>
+    <style>
+        .container {
+
+            font-weight: bold;
+            color: chocolate;
+            
+
+
+        }
+
+        .btn {
+            border-radius: 10px;
+            background-color: darkorange;
+            color: blue;
+            height: 30px;
+            width: 120px;
+            align-items: center;
+            justify-content: center;
+            margin: 100px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>THIS IS MY HEADING</h1>
+        <details>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam aliquam minus hic commodi?
+            Illum,
+            veritatis. Ex tempora quidem cum tempore hic non dolores, facilis recusandae, accusantium in ipsum libero
+            harum! Obcaecati, nulla sequi Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dolores quam?
+            Optio dolores sequi beatae, nostrum dolore laudantium consequuntur maxime eaque placeat tempore expedita eum
+            similique dolorum error velit, fuga esse a dicta! Mollitia officia unde autem eveniet temporibus minus nemo
+            quidem rerum! Tenetur laudantium dolores excepturi veritatis iste explicabo!.</p></details>
+    </div>
+    <button class="btn" onclick="togglehide()">
+    SHOW LESS
+    </button>
+
+    <button class="btn" onclick="toggleshow()">
+        SHOW MORE
+    </button>
+
+    <button class="btn" onclick="toggleboth()">
+        SHOW/LESS
+    </button>
+
+
+   
+
+    <script>
+       
+ 
+       //Non-  if else function
+        function togglehide() {  
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+                para.style.display = 'none';
+                
+
+            }
+
+            //Non- if else function
+            function toggleshow() {  
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+          
+                para.style.display = 'block';
+            }
+
+            //if else function
+            function toggleboth() {  
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+             if (para.style.display!='none'){
+                para.style.display = 'none';
+              
+                  
+                }
+                  else{
+                    para.style.display='block';
+                  }  
+            }
+                   
+            
+        
+
+    </script>
+
+</body>
+
+</html>

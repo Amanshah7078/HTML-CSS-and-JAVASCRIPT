@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Style</title>
+</head>
+<body>
+    <style>
+        .grid{
+display: grid; 
+          /* grid-template-rows: 1fr 4fr 2fr 4fr ; */
+           grid-auto-rows: 1fr ;
+           grid-template-columns: 1fr 1fr 1fr;
+           grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+           justify-content: center;
+           
+}
+        .box{
+             background-color: red;
+            border: 2px solid black;
+            margin: 30px;
+            grid-template-columns: repeat(400px minmax(900px 1fr));
+            padding: 28px;
+        }
+    </style>
+</body>
+<div class="grid">
+   <div class="box">This is box-1 </div>
+   <div class="box">This is box-2</div>
+   <div class="box">This is box-3</div>
+   <div class="box">This is box-4</div>
+   <div class="box">This is box-1</div>
+   <div class="box">This is box-2</div>
+   <div class="box">This is box-3</div>
+   <div class="box">This is box-4</div>
+</div>
+</html>
